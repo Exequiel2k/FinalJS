@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO COMERCIAL</title>
+    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
+   
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="container">
+    <nav id="nav">
+        <div class="logo">
+            <a href="./index.html"><img src="../img/logo1.png" alt="logo del banco"></a>
+        </div>
+        <div class="class-nav">
+            <a href="./index.html">CARGAR USUARIO</a>
+            <a href="./prestamos.html">PRESTAMOS</a>
+            <a href="./solicitud_tarjeta.html">SOLICITUD DE TARJETAS</a>
+        </div>
+        <div class="input-nav">
+            <input id='busCliente'type="text"  placeholder="Buscar Cliente">
+            <button id="btn_busCliente">BUSCAR</button>
+        </div>
+    </nav>
+    <h1 class="titulo">Cargar Ficha del Usuario</h1>
+    <div id="formulario">
+        <form id="formulario1" action="">
+            <input id="nombre" class="primero"type="text" placeholder="NOMBRE Y APELLIDO">
+            <label class="separador" for="">NOMBRE Y APELLIDO</label>
+            
+            <input id="edad"type="number" placeholder="EDAD">
+            <label class="separador" for="">EDAD</label>
+            
+            <input id="lugar_trabajo" type="text" placeholder="LUGAR DE TRABAJO">
+            <label  class="separador" for="">LUGAR DE TRABAJO</label>
+            
+            <input id="domicilio" type="text" placeholder="DOMICILIO">
+            <label class="separador" for="">DOMICILIO</label>
+            
+            <input id="sueldo" type="number" placeholder="SUELDO">
+            <label class="separador" for="">SUELDO</label>
+            
+            <div class="btn">
+                <button type="button" id= "btn_cargar" class="btn-cargar-modal">CARGAR</button>
+             
+                <button type="reset">BORRAR</button>
+                <button type="button" id="verCliente">VER LISTADO</button>
+            </div>
+        </form>
+    </div>
+    <div id="dialog">
+            <dialog id="modal">
+                <h1>Usted se ha Registrado de Forma Correcta</h1>
+                <button id="btn-cerrar-modal">CERRAR</button>
+            </dialog>
+    </div>
+    <div id="dialog_canc">
+        <dialog id="modal_canc">
+            <h1>Usted no ha ingresado ningun dato </h1>
+            <button id="btn-cerrar-modal_canc">CERRAR</button>
+        </dialog>
+    </div>
+
+
+    <div id="mostrar_clientes" class="mostrar_clientes">
+            <table border="3px"class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NOMBRE Y APELLIDO</th>
+                    <th>EDAD</th>
+                    <th>OCUPACION</th>
+                    <th>DOMICILIO</th>
+                    <th>SUELDO</th>
+                </tr>
+            </thead>
+            <tbody id="Carga_Cliente">
+                
+
+                
+            </tbody>
+            </table>
+    </div>
+
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

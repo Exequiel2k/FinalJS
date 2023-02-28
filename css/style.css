@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background: #f5da88;
+}
+/* Nav*/
+#container{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    background: rgb(165, 165, 204);
+
+
+}
+#nav{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    overflow: hidden; 
+    margin-bottom: 100px;
+}
+.input-nav input{   
+    width: 270px;
+    height: 20px;
+}
+.input-nav button{
+    margin-right: 20px;
+    width: 100px;
+    height: 30px;
+}
+.logo img{
+    width: 200px;
+    height: 120px;
+}
+
+.class-nav{
+    justify-content: center;
+}
+.class-nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.class-nav a:hover{
+    color: #f1c83c;
+    border: 1px solid #f1c83c;
+    border-color: #f1c83c;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 30px;
+    text-decoration-line: underline;
+}
+
+/*FORMULARIO*/
+
+
+
+#formulario form {
+    flex-direction: column;  
+    display: flex;
+}
+#formulario form input{
+    padding: 5px;
+    margin: 0 auto;
+    width: 500px;
+}
+.separador{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+.btn{
+    margin: 0 auto;
+    
+}
+
+.btn button{
+    width: 80px;
+    height: 35px;  
+}
+
+#btn-cargar{
+    display: inline-block;
+    width: 80px;
+    height: 35px;  
+
+}
+
+/*  TABLA  */
+
+.table{
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#Carga_Cliente tr td{
+   text-align: center;
+   padding: 5px;
+}
+
+.mostrar_clientes{
+    display: none;
+}
+
+
+
+#verCliente{
+    width: 100PX;
+}
+
+
+/* Prestamos Personales*/
+
+#sueldo{
+    height: 30px;
+}
+#prestamo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.agrandar{
+    font-size: 70px;
+    
+}
+.achicar{
+    font-size: 20px;
+    
+}
+#simular{
+    width: 100px;
+    height: 20px;
+    text-align: center;    
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.txt{
+   text-align: center;
+   margin-bottom: 70px;
+   text-decoration-line: underline;
+}
+
+
+#prestamo h2{
+    font-size: 20px;
+}
+
+#form-prestamo {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   width: 600px;
+   margin: 0 auto;
+}
+
+#form-prestamo h2{
+    margin: 20px;
+    text-align: center;
+}
+
+#form-prestamo input{
+    width: 400px;
+    height: 20px;
+    margin: 0 auto;
+}
+#form-prestamo label{
+    text-align: center;
+    margin: 10px;
+}
+
+#select {
+    width: 400px;
+    height: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.btn_botones{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    margin: 0 auto;
+}
+#btn_pres , #btn_prestamo_borrar{
+ 
+   text-align: center;
+    width: 90px;
+    height: 30px;
+    margin: 20px;
+}
+
+.ocultar{
+    display: none;
+}
+.tabla1{
+    display: none;
+    
+}
+
+.items{
+    padding: 10px;
+    font-size: 20px;
+}
+.tabla1 tbody td{
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#div_tabla{
+       margin-bottom: 100px;
+}
+#tabla{
+    margin: 0 auto;
+}
+#tabla tbody td{
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+
+#aceptar{
+    margin: 0 auto;
+}
+#aceptar_btn{
+    width: 100px;
+    height: 30px;
+    
+ 
+}
+
+footer {
+background: black;    
+}
+
+/*modal*/
+
+#dialog{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#modal {
+    border-radius: 20px;
+    position: absolute;
+    top: 46%;
+    left: 33%;
+    flex-direction: column;
+    width: 700px;
+    height: 100px;
+    background-color: #c4c4e2;
+   
+}
+#modal h1{
+    margin-top: 10px;
+    text-align: center;
+
+}
+#btn-cerrar-modal{
+    margin-left: 300px;
+    margin-top: 15px;
+    background-color: #efc033;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+
+    
+}
+/*modal prestamo*/
+#dialog_pres{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#modal_pres{
+    border-radius: 20px;
+    position: absolute;
+    top: 46%;
+    left: 31%;
+    flex-direction: column;
+    width: 650px;
+    height: 170px;
+    background-color: #c4c4e2;
+}
+#modal_pres h1{
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+#btn-cerrar-modal_pres{
+    margin-left: 270px;
+    margin-top: 15px;
+    background-color: #efc033;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+}

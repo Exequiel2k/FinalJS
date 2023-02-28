@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO COMERCIAL</title>
+    <link rel="shortcut icon" href="../img/logo1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<div id="container">
+    <nav id="nav">
+        <div class="logo">
+            <a href="./index.html"><img src="../img/logo1.png" alt="logo del banco"></a>
+        </div>
+        <div class="class-nav">
+            <a href="./index.html">CARGAR USUARIO</a>
+            <a href="./prestamos.html">PRESTAMOS</a>
+            <a href="./solicitud_tarjeta.html">SOLICITUD DE TARJETAS</a>
+        </div>
+        <div class="input-nav">
+            <input type="text"  placeholder="Buscar Cliente">
+            <button>BUSCAR</button>
+        </div>
+    </nav>
+    
+    <div class="" id="prestamo">
+        <h1 class="txt agrandar">PRESTAMOS PERSONALES</h1>
+        <h3 class="txt achicar">REALIZE UNA SIMULACION DEL PRESTAMOS </h3>
+        <button id="simular">SIMULAR</button>
+        <div id="form" class="ocultar">
+        <form id="form-prestamo"  action="">
+            
+            <input id="sueldo" type="number">
+            <label for="">Ingrese su sueldo</label>
+
+            <input id="cantidadDinero" type="number">
+            <label for="">Ingrese la Cantidad que desea solicitar</label>
+            
+            <h2>Ingrese la cantidad de cuotas </h2>
+            <select name="" id="select" value=option>
+                <option id="option"value="0">Elija una Opcion</option>
+                <option id="6cuotas" value= '6' >6 Cuotas</option>
+                <option id="12cuotas" value='12'>12 Cuotas</option>
+                <option id="18cuotas"value='18'>18 Cuotas</option>
+                <option id="24cuotas"value='24'>24 Cuotas</option>
+            </select>
+            <div class="btn_botones">
+                <button id="btn_pres" type="button">Solicitar</button>
+                <button id="btn_prestamo_borrar"type="reset">Borrar</button>
+               </div>
+            </form>
+            <div id="div_tabla" class="">
+                <table  id="tabla" class="tabla1" border="3px" class="table">
+                    <thead>
+                        <tr>
+                            <th class="items">N° DE CUOTA</th>
+                            <th class="items">IMPORTE</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="respuestaPrestamo">
+                        
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+        <div id="aceptar" class="tabla1">
+            <button id="aceptar_btn">ACEPTAR</button>
+        </div>
+        </div>    
+        
+    </div>
+    <div id="dialog">
+        <dialog id="modal">
+            <h1>Usted no ha ingresado ningun dato </h1>
+            <button id="btn-cerrar-modal">CERRAR</button>
+        </dialog>
+    </div>
+    
+    <div id="dialog_pres">
+        <dialog  id="modal_pres">
+            <h1>Su credito Personal ah sido Otorgado
+                GRACIAS POR CONFIAR EN NUESTRO BANCO
+            </h1>
+            <button id="btn-cerrar-modal_pres">CERRAR</button>
+        </dialog>
+    </div>
+      
+    </div>
+   
+    <script src="../js/prestamos.js"></script>
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
