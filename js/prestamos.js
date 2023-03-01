@@ -20,8 +20,9 @@ simular.addEventListener('click' , ()=>{
         document.getElementById('tabla').classList.remove('tabla1')   
     
                 if(select.value == '6'){
-                    prestamos_modal.showModal();
-                    cerrar_modal(cerrarModalPres , modal_pres);
+                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                    // prestamos_modal.showModal();
+                    // cerrar_modal(cerrarModalPres , modal_pres);
                     let saldo6 = parseInt((Number(cantidadDinero.value) * 3)/6 ).toLocaleString('en')
                     console.log(sueldo.value)
                         for ( i = 1 ; i <= 6 ; i++){
@@ -33,8 +34,9 @@ simular.addEventListener('click' , ()=>{
                                             
                                 }
                 else if(select.value == '12'){
-                    prestamos_modal.showModal();
-                    cerrar_modal(cerrarModalPres , modal_pres);
+                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                    // prestamos_modal.showModal();
+                    // cerrar_modal(cerrarModalPres , modal_pres);
                      let saldo12 =  parseInt((Number(cantidadDinero.value) * 4)/12).toLocaleString('en')
                         for ( i = 1 ; i <= 12 ; i++){
                             respuestaPrestamo.innerHTML +=`
@@ -44,8 +46,9 @@ simular.addEventListener('click' , ()=>{
                         }
                                 }
                 else if (select.value == '24'){
-                    prestamos_modal.showModal();
-                    cerrar_modal(cerrarModalPres , modal_pres);
+                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                    // prestamos_modal.showModal();
+                    // cerrar_modal(cerrarModalPres , modal_pres);
                      let saldo24 = parseInt((Number(cantidadDinero.value) * 6)/24).toLocaleString('en')
                             for ( i = 1 ; i <= 24 ; i++){
                                 respuestaPrestamo.innerHTML +=`
@@ -55,8 +58,9 @@ simular.addEventListener('click' , ()=>{
                             }}
                             
                 else if (select.value == '18'){
-                    prestamos_modal.showModal();
-                    cerrar_modal(cerrarModalPres , modal_pres);
+                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                    // prestamos_modal.showModal();
+                    // cerrar_modal(cerrarModalPres , modal_pres);
                     let saldo18 =  parseInt((Number(cantidadDinero.value) * 5)/18).toLocaleString('en')
                         for ( i = 1 ; i <= 18 ; i++){
                             respuestaPrestamo.innerHTML +=`
@@ -65,8 +69,9 @@ simular.addEventListener('click' , ()=>{
                                                 
                         }}
                 else{
-                    modal.showModal();
-                    cerrar_modal(cerrarModal , modal);
+                    // modal.showModal();
+                    // cerrar_modal(cerrarModal , modal);
+                    Swal.fire('Ingrese una Opcion Valida')
                     
                 }
 })
@@ -85,17 +90,17 @@ console.log(sueldoLocal)
 
 //modal
 
-let cerrarModal = document.getElementById('btn-cerrar-modal')
-let  botonCargar= document.getElementById('btn-cargar-modal')
-let modal = document.getElementById('modal')
-let prestamos_modal = document.getElementById('modal_pres')
-let cerrarModalPres= document.getElementById('btn-cerrar-modal_pres')
+// let cerrarModal = document.getElementById('btn-cerrar-modal')
+// let  botonCargar= document.getElementById('btn-cargar-modal')
+// let modal = document.getElementById('modal')
+// let prestamos_modal = document.getElementById('modal_pres')
+// let cerrarModalPres= document.getElementById('btn-cerrar-modal_pres')
 
-function cerrar_modal(par1,par2){
-    par1.addEventListener("click" , ()=>{
-        par2.close()
-    })
-}
-cerrar_modal(cerrarModal , modal);
-cerrar_modal(cerrarModalPres , modal_pres);
+// function cerrar_modal(par1,par2){
+//     par1.addEventListener("click" , ()=>{
+//         par2.close()
+//     })
+// }
+// cerrar_modal(cerrarModal , modal);
+// cerrar_modal(cerrarModalPres , modal_pres);
 
