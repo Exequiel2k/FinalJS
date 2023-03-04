@@ -133,4 +133,11 @@ classTabla();
 
 let sueldoLocal = localStorage.getItem(sueldo)
 console.log(sueldoLocal)
+<<<<<<< HEAD
  
+=======
+
+
+
+
+>>>>>>> 36decf7c05c105cb1b0c0cf2a1c261b1cc43d7e5
