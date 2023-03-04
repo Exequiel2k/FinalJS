@@ -104,13 +104,13 @@ function cargar(array){
 //MODAL
 
 
-function cerrar_modal(){
-    cerrarModal.addEventListener("click" , ()=>{
-        modal.close()
-    })
-}
+// function cerrar_modal(){
+//     cerrarModal.addEventListener("click" , ()=>{
+//         modal.close()
+//     })
+// }
 
-cerrar_modal();
+// cerrar_modal();
 
 // buscar
 let busCliente = document.getElementById('busCliente')
@@ -136,3 +136,11 @@ function buscarCliente(busc , array){
 //Agregar un sueldo
 //libreria sweet alert
 
+let contador1 = 0
+for(let letra of "hola mundo"){
+    contador1 += 1000
+    setTimeout(()=>{
+      
+        console.log(letra)
+    }, contador1)
+}

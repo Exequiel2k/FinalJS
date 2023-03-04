@@ -1,1 +1,3 @@
 Boton cargar de ficha de usuario: Funciona mal por que carga sin tener los campos llenos .
+
+*Profe espero borrar este mensaje y terminar el proyecto en su totalidad. Yo se que no es escusa lo que voy a decir pero bueno es mi realidad. Las ultimas clases por cuestiones de trabajo no pude estar asi que re atrase , la venia llevando bien pero bueno se me hizo una bola de nieve al final y ahora estoy tratando de acomodarme con las clases. Desde ya le pido mil disculpa si lee esto y al trabajo le faltan cosas. Desde ya muchas gracias. Exequiel

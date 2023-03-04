@@ -8,6 +8,8 @@ let cantidadDinero = document.getElementById("cantidadDinero")
 let opcion = document.getElementById("option")
 let respuestaPrestamo = document.getElementById("respuestaPrestamo")
 let select =document.getElementById('select')
+let loader = document.getElementById('centrado')
+
 
 //function prestamo(){
     
@@ -16,64 +18,109 @@ simular.addEventListener('click' , ()=>{
     })  
     
  btn_pres.addEventListener("click" , () => {
-        
-        document.getElementById('tabla').classList.remove('tabla1')   
+   
+     
+     if(select.value == '6'){
+       
     
-                if(select.value == '6'){
-                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
-                    // prestamos_modal.showModal();
-                    // cerrar_modal(cerrarModalPres , modal_pres);
-                    let saldo6 = parseInt((Number(cantidadDinero.value) * 3)/6 ).toLocaleString('en')
-                    console.log(sueldo.value)
-                        for ( i = 1 ; i <= 6 ; i++){
-                            respuestaPrestamo.innerHTML +=`
-                                                        <td> ${i} Cuotas </td>
-                                                        <td> $ ${saldo6}</td>`
-                                                
-                        }
-                                            
-                                }
+         setTimeout(()=>{
+             
+             Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+             
+            }, 2000)
+            
+            let saldo6 = parseInt((Number(cantidadDinero.value) * 3)/6 ).toLocaleString('en')
+            console.log(sueldo.value)
+           
+            
+            setTimeout(()=>{
+                document.getElementById('tabla').classList.remove('tabla1')   
+                
+                for ( i = 1 ; i <= 6 ; i++){
+                    respuestaPrestamo.innerHTML +=`
+                    <td> ${i} Cuotas </td>
+                    <td> $ ${saldo6}</td>`
+                    
+                }
+                
+            }, 3000)
+         
+
+                }
                 else if(select.value == '12'){
-                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
-                    // prestamos_modal.showModal();
-                    // cerrar_modal(cerrarModalPres , modal_pres);
+                   
+                    setTimeout(()=>{
+             
+                        Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                        
+                    }, 2000)
+                 
                      let saldo12 =  parseInt((Number(cantidadDinero.value) * 4)/12).toLocaleString('en')
+                   
+                     setTimeout(()=>{  
+                       
+                        document.getElementById('tabla').classList.remove('tabla1')    
+                     
                         for ( i = 1 ; i <= 12 ; i++){
                             respuestaPrestamo.innerHTML +=`
                                                         <td> ${i} Cuotas </td>
                                                         <td> $ ${saldo12}</td>`
                                                 
                         }
+                    }, 3000)
                                 }
                 else if (select.value == '24'){
-                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
-                    // prestamos_modal.showModal();
-                    // cerrar_modal(cerrarModalPres , modal_pres);
-                     let saldo24 = parseInt((Number(cantidadDinero.value) * 6)/24).toLocaleString('en')
-                            for ( i = 1 ; i <= 24 ; i++){
-                                respuestaPrestamo.innerHTML +=`
-                                                            <td> ${i} Cuotas </td>
-                                                            <td> $ ${saldo24}</td>`
-                                                    
-                            }}
+                   
+                    setTimeout(()=>{
+                        Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                    }, 2000)
+                   
+                    let saldo24 = parseInt((Number(cantidadDinero.value) * 6)/24).toLocaleString('en')
+                   
+                    setTimeout(()=>{   
+                   
+                        document.getElementById('tabla').classList.remove('tabla1')      
+                   
+                        for ( i = 1 ; i <= 24 ; i++){
+                                    respuestaPrestamo.innerHTML +=`
+                                                                <td> ${i} Cuotas </td>
+                                                                <td> $ ${saldo24}</td>`
+                                                        
+                                }
+                    }, 3000)
+                        }
                             
                 else if (select.value == '18'){
-                    Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
-                    // prestamos_modal.showModal();
-                    // cerrar_modal(cerrarModalPres , modal_pres);
+                    
+                    setTimeout(()=>{
+                        Swal.fire('GRACIAS POR CONFIAR EN SU BANCO')
+                    }, 2000)
+                  
                     let saldo18 =  parseInt((Number(cantidadDinero.value) * 5)/18).toLocaleString('en')
+                   
+                    setTimeout(()=>{    
+                   
+                        document.getElementById('tabla').classList.remove('tabla1')     
+                   
                         for ( i = 1 ; i <= 18 ; i++){
                             respuestaPrestamo.innerHTML +=`
                                                         <td> ${i} Cuotas </td>
                                                         <td> $ ${saldo18}</td>`
                                                 
-                        }}
+                        }
+                    }, 3000)}
+               
                 else{
-                    // modal.showModal();
-                    // cerrar_modal(cerrarModal , modal);
-                    Swal.fire('Ingrese una Opcion Valida')
+               
+                    setTimeout(()=>{
+               
+                        Swal.fire('Ingrese una Opcion Valida')
+                       
+                    }, 1000)
                     
                 }
+
+            
 })
 
 
@@ -86,21 +133,4 @@ classTabla();
 
 let sueldoLocal = localStorage.getItem(sueldo)
 console.log(sueldoLocal)
-
-
-//modal
-
-// let cerrarModal = document.getElementById('btn-cerrar-modal')
-// let  botonCargar= document.getElementById('btn-cargar-modal')
-// let modal = document.getElementById('modal')
-// let prestamos_modal = document.getElementById('modal_pres')
-// let cerrarModalPres= document.getElementById('btn-cerrar-modal_pres')
-
-// function cerrar_modal(par1,par2){
-//     par1.addEventListener("click" , ()=>{
-//         par2.close()
-//     })
-// }
-// cerrar_modal(cerrarModal , modal);
-// cerrar_modal(cerrarModalPres , modal_pres);
-
+ 
