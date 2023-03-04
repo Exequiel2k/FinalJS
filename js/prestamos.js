@@ -88,19 +88,5 @@ let sueldoLocal = localStorage.getItem(sueldo)
 console.log(sueldoLocal)
 
 
-//modal
 
-// let cerrarModal = document.getElementById('btn-cerrar-modal')
-// let  botonCargar= document.getElementById('btn-cargar-modal')
-// let modal = document.getElementById('modal')
-// let prestamos_modal = document.getElementById('modal_pres')
-// let cerrarModalPres= document.getElementById('btn-cerrar-modal_pres')
-
-// function cerrar_modal(par1,par2){
-//     par1.addEventListener("click" , ()=>{
-//         par2.close()
-//     })
-// }
-// cerrar_modal(cerrarModal , modal);
-// cerrar_modal(cerrarModalPres , modal_pres);
 
