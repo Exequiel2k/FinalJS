@@ -131,5 +131,26 @@ btn_prestamo_borrar.addEventListener("click", ()=>{
 }
 classTabla();
 
-let sueldoLocal = localStorage.getItem(sueldo)
-console.log(sueldoLocal)
+// Finalizar la adquisicion del prestamo
+
+function finalPrestamo(array){
+    Swal.fire({
+        title: 'Esta seguro ?',
+        text: "Esta seguro de solicitar el credito?",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+        }
+      })
+}
+
+
